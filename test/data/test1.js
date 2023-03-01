@@ -4,5 +4,5 @@ function foo(a, b) {
       return 3;
     })();
   }     
-foo(1, 'wut', 3);
+  foo(1, 'wut', 3);
 

@@ -7,7 +7,12 @@
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "fill": "your scripts here"
+        "fill": "your scripts here",
+        "help": "./bin/log.js --help",
+        "test1": "./bin/log.js test/data/test1.js ",
+        "test": "mocha test/test.mjs",
+        "cov": "nyc npm test"
+
     },
     "dependencies": {
         "acorn": "^8.8.2",
@@ -17,7 +22,7 @@
         "estraverse": "^5.2.0",
         "underscore": "^1.12.0"
     },
-    "version": "0.3.0",
+    "version": "0.4.0",
     "devDependencies": {
         "mocha": "^10.2.0"
     }

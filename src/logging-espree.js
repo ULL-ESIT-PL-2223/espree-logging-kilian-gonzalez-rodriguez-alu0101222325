@@ -35,10 +35,10 @@ function addBeforeCode(node) {
   const name = node.id ? node.id.name : '<anonymous function>'; // si no tiene nombre la llamaremos anonymous
   let paramNames = "";
   if (node.params.length) { //concatenacion de los parametros de la funcion
-    paramNames = "${ " + node.params.map(param => param.name).join(" }, $ { ") + " }";
+    paramNames = "${ " + node.params.map(param => param.name).join(" }, ${ ") + " }";
   }
   const lineN = node.loc.start.line; //coje la linea de la llamada
-  const beforeCode = "console.log('Entering " + name + "(" + paramNames +") at line "+ lineN +"');";
+  const beforeCode = "console.log(`Entering " + name + "(" + paramNames +") at line "+ lineN +"`);";
   const beforeNodes = espree.parse(beforeCode, {ecmaVersion: 12}).body; //me quedo con el array del body
   node.body.body = beforeNodes.concat(node.body.body);
 }
