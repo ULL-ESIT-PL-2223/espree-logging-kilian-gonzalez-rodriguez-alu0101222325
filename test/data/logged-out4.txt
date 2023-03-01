@@ -1,0 +1,6 @@
+Entering mondongo(1, 2, 3) at line 1
+Entering <anonymous function>() at line 3
+Entering <anonymous function>(4) at line 6
+ALgo 3 5 15
+Entering <anonymous function>(1, 2, 3) at line 8
+12
