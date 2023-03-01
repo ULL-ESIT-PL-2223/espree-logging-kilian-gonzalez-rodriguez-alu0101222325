@@ -5,3 +5,4 @@ function foo(a, b) {
     })();
   }     
 foo(1, 'wut', 3);
+
